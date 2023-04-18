@@ -35,7 +35,7 @@ const Weather = ({ weatherData }) => {
                     {moment().format('LL')}
                 </div>
                 <div className='flex'>
-                    {(weatherData.weather[0].main === "Clear") ? <BsSun className='mt-1 mr-2'/> : <BsFillCloudsFill />}
+                    {(weatherData.weather[0].main === "Clear") ? <BsSun className='mt-1 mr-2'/> : <BsFillCloudsFill className='mt-1 mr-2'/>}
                     {weatherData.weather[0].main}
                 </div>
                 <div className='flex'>
